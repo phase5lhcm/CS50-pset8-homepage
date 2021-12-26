@@ -25,6 +25,23 @@ a {
   min-height: 100vh;
   overflow: hidden;
   background-color: #f6ebf4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.left-column {
+  position: relative;
+}
+.abs-shape {
+  position: absolute;
+  z-index: 0;
+  border-left: 100px solid #ce92a9;
+  border-right: 100px solid transparent;
+  border-bottom: 100px solid transparent;
+  border-top: 100px solid transparent;
+  transform: rotate(80deg);
+  bottom: -300px;
+  left: -110px;
 }
 
 .container {
@@ -96,4 +113,57 @@ header .container {
   background-color: #e6c7d3;
   color: #482673;
   transform: scale(1.2);
+}
+
+.display .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.title-text {
+  color: #482673;
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  line-height: 1.4;
+}
+
+.text {
+  font-size: 1.1rem;
+  margin: 1.5rem 0 2.5rem;
+  color: #482673;
+  max-width: 600px;
+  line-height: 2.3;
+}
+
+.display .btn {
+  box-shadow: 0 0 40px 2px rgba(222, 181, 197, 1);
+}
+
+.flamingo {
+  height: 48rem;
+}
+
+.toggle-btn {
+  display: inline-block;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  height: 39px;
+  width: 39px;
+  border: 50%;
+  font-size: 1.1rem;
+  transition: 0.2s;
+}
+
+.toggle-btn i {
+  line-height: 39px;
+}
+
+.toggle-btn i:last-child {
+  display: none;
+}
+
+.toggle-btn:hover {
+  background-color: #e6c7d3;
 }

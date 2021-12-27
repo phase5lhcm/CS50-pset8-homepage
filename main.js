@@ -1,5 +1,6 @@
 let toggleBtn;
 let wrapper;
+let menu;
 
 /**
  * To create change between light/dark themes
@@ -11,6 +12,7 @@ let wrapper;
 function substituteBtns() {
   toggleBtn = document.querySelector(".toggle-btn");
   wrapper = document.querySelector(".wrapper");
+  menu = document.querySelector(".menu");
 }
 const main = document.querySelector("main");
 substituteBtns();
@@ -50,6 +52,9 @@ function toggleUI() {
 
 function events() {
   toggleBtn.addEventListener("click", toggleUI);
+  menu.addEventListener("click", () => {
+    wrapper.classList.toggle("active");
+  });
 }
 
 events();

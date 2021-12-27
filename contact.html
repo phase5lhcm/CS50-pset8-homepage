@@ -43,21 +43,39 @@
         <div class="display">
           <div class="container">
             <div class="left-column">
-              <div class="title-text">
-                <h1>Welcome to my homepage</h1>
-                <h1>Click the links to look around</h1>
+              <div class="content" style="max-width: 29rem">
+                <div class="title-text title-text-mobile">
+                  <h2>Get in touch</h2>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Veniam at eveniet nulla quam impedit nostrum unde sequi vel
+                    libero dolores!
+                  </p>
+                </div>
               </div>
-              <p class="text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Veritatis praesentium error totam. Lorem ipsum dolor sit amet.
-              </p>
-              <div class="cta">
-                <button class="btn">Get started</button>
-              </div>
-              <div class="abs-shape"></div>
+              <!--overides style set in style-sheet for this page-->
+              <div class="abs-shape" style="bottom: -24rem"></div>
             </div>
             <div class="right-column">
-              <img src="assets/flamingo.svg" class="flamingo" alt="Flamingo" />
+              <form action="#">
+                <input type="text" placeholder="Full name" />
+                <input type="email" placeholder="Email" />
+                <input type="phone" placeholder="Phone" />
+                <textarea
+                  name="Message"
+                  placeholder="Message"
+                  cols="30"
+                  rows="10"
+                ></textarea>
+                <div class="check-box">
+                  <input type="checkbox" />
+                  <p>
+                    By checking this box, you agree to the
+                    <span>Privacy Policy</span> and <span>Cookie Policy</span>.
+                  </p>
+                </div>
+                <button class="btn">Submit</button>
+              </form>
             </div>
           </div>
         </div>

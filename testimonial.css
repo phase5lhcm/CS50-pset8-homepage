@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400&family=Raleway:wght@300;400;500&display=swap");
+.light {
+  --mainColor: #482673;
+  --hoverColor: #e6c7d3;
+  --darkOne: #ce92a9;
+  --lightOne: #f6ebf4;
+  --bckgroundColor: #f6ebf5;
+}
+.dark {
+  --mainColor: #6c39ad;
+  --hoverColor: #00008c;
+  --darkOne: #24133a;
+  --lightOne: #f6ebf4;
+  --bckgroundColor: #00003f;
+}
+.carousel-caption {
+  color: var(--lightOne);
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: var(--mainColor);
+  font-family: "Raleway";
+  border-radius: 6px;
+}
+
+.display {
+  width: 50rem;
+  border-radius: 6px;
+  margin: auto;
+  position: relative;
+}
+
+.shape {
+  position: absolute;
+  z-index: 0;
+  border-left: 100px solid var(--darkOne);
+  border-right: 100px solid transparent;
+  border-bottom: 100px solid transparent;
+  border-top: 100px solid transparent;
+  transform: rotate(80deg);
+  bottom: -190px;
+  left: -6px;
+}

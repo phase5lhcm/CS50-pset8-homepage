@@ -48,4 +48,8 @@
   .display {
     top: 4rem;
   }
+
+  .shape {
+    display: none;
+  }
 }

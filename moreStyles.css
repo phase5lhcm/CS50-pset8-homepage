@@ -1,0 +1,22 @@
+.display {
+  position: relative;
+}
+.display .faqs {
+  max-width: 81rem;
+  width: 80%;
+  position: absolute;
+  bottom: 14rem;
+  left: 7rem;
+}
+
+.shape {
+  position: absolute;
+  z-index: 0;
+  border-left: 100px solid var(--darkOne);
+  border-right: 100px solid transparent;
+  border-bottom: 100px solid transparent;
+  border-top: 100px solid transparent;
+  transform: rotate(80deg);
+  bottom: -140px;
+  left: -40px;
+}

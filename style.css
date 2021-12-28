@@ -293,7 +293,9 @@ header .container {
   .menu {
     display: block;
   }
-
+  .abs-shape {
+    bottom: -40rem;
+  }
   .links {
     position: fixed;
     top: 0;

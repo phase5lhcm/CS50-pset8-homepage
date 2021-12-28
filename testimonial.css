@@ -40,3 +40,12 @@
   bottom: -190px;
   left: -6px;
 }
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+@media screen and (max-width: 870px) {
+  .display {
+    top: 4rem;
+  }
+}
